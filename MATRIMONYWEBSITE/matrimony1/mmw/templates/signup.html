@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content1 %}
+  <div class="row p-3">
+    <div class="col shadow p-3 mb-5 bg-body rounded">
+        <h4 class="text-danger p-3">signupform</h4>
+        <form action="" method="post">
+            {% csrf_token %}
+            {% for i in fm %}
+            {{i.label_tag}}{{i}}{{i.errors|striptags}}<br><br>
+            {% endfor %}
+            <input type="submit" value="signup">
+        </form>
+    </div>
+  </div>
+{% endblock content1 %}

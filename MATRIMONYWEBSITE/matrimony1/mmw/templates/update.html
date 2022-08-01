@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content1 %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 shadow p-3 mb-5 bg-body rounded">
+ <form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{fm.as_p}}
+  <input type="submit" value="update">
+ </form>
+ </div>
+ </div>
+ </div>
+{% endblock content1 %}

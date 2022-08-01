@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&family=Roboto+Condensed:wght@300&display=swap');
+        </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row shadow p-3 mb-5 bg-body rounded bg-light">
+      <h3 class="fst-italic text-success text-center mt-2">INFO OF CANDIDTAE</h3>
+      <div class="col mt-3 text-center">
+        <p>PHOTO</p><img src="{{pi.img.url}}" width="180px" height="180px">
+        <p class="mt-2"><span class="fw-bold">BIODATA: </span><a href="{{pi.biodata.url}}">attachment</a></p>
+          </div>
+      <div class="col mt-3">
+        <span class="fw-bold">NAME: </span>{{pi.name}}</p>
+        <p><span class="fw-bold">EDUCATION: </span>{{pi.education}}</p>
+        <p><span class="fw-bold">GENDER: </span>{{pi.gender}}</p>
+        <p><span class="fw-bold">AGE: </span>{{pi.age}}</p>
+        <p><span class="fw-bold">DATE: </span>{{pi.date}}</p>
+        <p><span class="fw-bold">RELIGION: </span>{{pi.religion}}</p>
+        <p><span class="fw-bold">OCCUPATION: </span>{{pi.occupation}}</p>
+        <p><span class="fw-bold">CITY: </span>{{pi.city}}</p>
+        <p><span class="fw-bold">EMAIL: </span>{{pi.email}}</p>
+        <p><span class="fw-bold">PHYSICAL_DISABILITY: </span>{{pi.physical_disability}}</p>
+         </div>
+      </div>
+  </div>
+   <script src="{% static 'bootstrap.min.js' %}"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
